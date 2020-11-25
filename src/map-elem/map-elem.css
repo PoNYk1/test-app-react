@@ -1,0 +1,23 @@
+.map-elem {
+  width: 100px;
+  height: 100px;
+
+  background: rgb(179, 179, 179);
+  border-radius: 5px;
+  cursor: pointer;
+
+  opacity: 0.9;
+  margin: 2px;
+  transition: 0.2s;
+}
+.map-elem:hover {
+  opacity: 1;
+}
+.red {
+  box-shadow: 0px 0px 20px rgb(255, 58, 58);
+  background: rgb(255, 58, 58);
+}
+.blue {
+  box-shadow: 0px 0px 20px rgb(74, 74, 255);
+  background: rgb(74, 74, 255);
+}

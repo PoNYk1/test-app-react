@@ -1,0 +1,21 @@
+.Header {
+  margin: 15px auto;
+  padding: 0px 10px;
+  text-align: left;
+  width: 400px;
+
+  color: rgb(41, 41, 41);
+}
+.Header h1 {
+  font-size: 35px;
+}
+.Header div {
+  text-align: right;
+  margin-right: 85px;
+  font-size: 23px;
+}
+.Header span {
+  padding: 5px;
+  padding-top: 4px;
+  border-radius: 7px;
+}

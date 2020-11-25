@@ -1,0 +1,59 @@
+.winner-window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+
+  z-index: 99;
+  opacity: 0;
+
+  transition: 0.5s ease-out;
+  font-size: 50px;
+
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(200, 200, 200);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show {
+  width: 100%;
+  opacity: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner-window span {
+  padding: 5px 10px;
+  padding-bottom: 2px;
+  border-radius: 7px;
+}
+
+.win {
+  animation: winAnimate 0.5s infinite ease-in-out;
+}
+.draw {
+  animation: drawAnimate 0.07s infinite alternate ease-in;
+}
+@keyframes winAnimate {
+  0% {
+    box-shadow: 0px 0px 20px rgb(255, 58, 58);
+    background: rgb(255, 58, 58);
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgb(74, 74, 255);
+    background: rgb(74, 74, 255);
+  }
+}
+@keyframes drawAnimate {
+  0% {
+    font-size: 50px;
+  }
+  100% {
+    font-size: 60px;
+  }
+}
